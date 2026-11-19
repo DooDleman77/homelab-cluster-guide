@@ -1,0 +1,5 @@
+# /etc/apt/sources.list.d/pve-no-subscription.list
+# Free Proxmox VE update repository (chapter 1, step 6).
+# Replace <codename>: trixie for Proxmox VE 9, bookworm for Proxmox VE 8.
+# Also disable pve-enterprise.(list|sources) and any ceph.(list|sources) file.
+deb http://download.proxmox.com/debian/pve <codename> pve-no-subscription

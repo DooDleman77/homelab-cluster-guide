@@ -1,0 +1,8 @@
+# Real secrets never go in this repo
+.env
+*.env
+*.key
+*.pem
+.restic-pass
+Settings.yml
+!configs/immichframe/Settings.example.yml

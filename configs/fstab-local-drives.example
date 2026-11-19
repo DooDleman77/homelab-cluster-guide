@@ -1,0 +1,5 @@
+# Lines to ADD to /etc/fstab on the Proxmox host (chapter 1, step 7).
+# Find each UUID with: blkid /dev/sdb1 /dev/sdc1
+# nofail = keep booting even if the drive is missing.
+UUID=<uuid-of-media-drive>   /mnt/media   ext4   defaults,nofail   0 2
+UUID=<uuid-of-backup-drive>  /mnt/backup  ext4   defaults,nofail   0 2

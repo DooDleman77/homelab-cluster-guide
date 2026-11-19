@@ -1,0 +1,11 @@
+# The vmbr0 block in /etc/network/interfaces on the Proxmox host (chapter 2).
+# DHCP here, plus a reservation for this MAC in your router = an address
+# that never changes but survives a network change.
+# Leave the rest of the file (lo, the physical port) as the installer wrote it.
+auto vmbr0
+iface vmbr0 inet dhcp
+        bridge-ports <your-network-port>
+        bridge-stp off
+        bridge-fd 0
+# Apply: ifreload -a   (or: systemctl restart networking, or reboot)
+# Then fix the host's line in /etc/hosts to the new address.

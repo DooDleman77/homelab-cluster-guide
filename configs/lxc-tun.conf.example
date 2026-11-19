@@ -1,0 +1,6 @@
+# Append to /etc/pve/lxc/<container-ID>.conf on the Proxmox host so Tailscale
+# can run inside an UNPRIVILEGED container (chapters 5, 8, 9).
+# Also: pct set <container-ID> -features nesting=1,keyctl=1
+# Then: pct reboot <container-ID>
+lxc.cgroup2.devices.allow: c 10:200 rwm
+lxc.mount.entry: /dev/net/tun dev/net/tun none bind,create=file

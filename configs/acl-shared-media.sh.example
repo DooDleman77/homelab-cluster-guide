@@ -1,0 +1,31 @@
+#!/bin/sh
+# Shared-drive permissions with ACLs, run on the Proxmox host (chapter 7, round 4).
+# READ CHAPTER 7 FIRST. Measure YOUR numbers; these are the one box's.
+#   Measure: pct exec <ID> -- su -s /bin/sh <service-user> -c "touch /media/uid-test"
+#            ls -ln /mnt/media/uid-test     (then delete the test file)
+JELLYFIN_UID=100107   # Jellyfin's user (107 inside its container)
+ARR_UID=100000        # Sonarr, Radarr, qBittorrent (root inside their containers)
+MEDIA=/mnt/media
+PHOTOS=/mnt/media/immich
+
+# 1. Take away world-writable permissions (folders 750, files 640)
+find "$MEDIA" -type d -exec chmod 750 {} \;
+find "$MEDIA" -type f -exec chmod 640 {} \;
+
+# 2. Grant exactly what's needed, now (-m) and for new files (-d)
+setfacl -R -m  u:$JELLYFIN_UID:rwX "$MEDIA"
+setfacl -R -m  u:$ARR_UID:rwX      "$MEDIA"
+setfacl -R -d -m u:$JELLYFIN_UID:rwX "$MEDIA"
+setfacl -R -d -m u:$ARR_UID:rwX      "$MEDIA"
+
+# 3. Photos: download tools out, Jellyfin read-only.
+#    Immich keeps its own owner (chown <immich-host-UID>:<immich-host-GID>, chmod 750).
+setfacl -R -x    u:$ARR_UID "$PHOTOS"
+setfacl -R -d -x u:$ARR_UID "$PHOTOS"
+setfacl -R -m    u:$JELLYFIN_UID:rX "$PHOTOS"
+setfacl -R -d -m u:$JELLYFIN_UID:rX "$PHOTOS"
+
+# 4. Check
+getfacl "$MEDIA/movies"
+# Folders made over Samba: look for "#effective:" lower than the entry; fix with
+#   setfacl -m mask::rwx "<folder>"

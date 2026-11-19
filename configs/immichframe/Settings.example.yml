@@ -1,0 +1,19 @@
+# Copy to config/Settings.yml. Use a NARROW, read-only Immich API key
+# (asset.read, asset.view, asset.download, album.read, person.read).
+# Never paste the real key into a chat or a repo.
+General:
+  Interval: 20
+  TransitionDuration: 2
+  Layout: 'single'
+  PlayAudio: true
+  ImageZoom: true
+  ImagePan: true
+  ShowClock: false
+  ShowProgressBar: true
+  ShowPhotoDate: false
+Accounts:
+  - ImmichServerUrl: 'http://<immich-IP>:2283'
+    ApiKey: '<your-immichframe-api-key>'
+    Albums:
+      - '<album-id>'
+    ShowVideos: true   # account-level setting: under General it is silently ignored
