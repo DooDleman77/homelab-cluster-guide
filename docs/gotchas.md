@@ -2,7 +2,7 @@
 
 [← Guide](../README.md)
 
-The short list. Each one cost at least an evening on the one box. The chapter has the full story and the fix.
+The short list. Each one cost at least an evening on CommandCenter. The chapter has the full story and the fix.
 
 ## Setup
 

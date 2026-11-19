@@ -81,7 +81,7 @@ My first library was the whole `/media`. Fine, until other things moved onto tha
 
 Video comes in different **codecs**. If a device can play a file's codec as-is, Jellyfin just sends it: **Direct Play**, almost free for the server. If not, Jellyfin **transcodes**: re-encodes it live while you watch.
 
-Modern graphics chips have video hardware that makes that easy. This box's old card has none, so four CPU cores do it alone, and they can't keep up with high-quality video. **What it looks like:** plays a few seconds, then stutters and stalls. Jellyfin's Dashboard shows the session as **Transcoding**, often with a reason.
+Modern graphics chips have video hardware that makes that easy. CommandCenter's old card has none, so four CPU cores do it alone, and they can't keep up with high-quality video. **What it looks like:** plays a few seconds, then stutters and stalls. Jellyfin's Dashboard shows the session as **Transcoding**, often with a reason.
 
 Options, cheapest first:
 
@@ -89,7 +89,7 @@ Options, cheapest first:
 - **About $130:** a cheap graphics card bought only for its video engine.
 - **About $170–220:** a small modern mini PC whose built-in graphics handle it.
 
-This box stayed on the $0 option. (Part 2 has some newer Intel chips with Quick Sync in it. Foreshadowing.)
+CommandCenter stayed on the $0 option. (Part 2 has some newer Intel chips with Quick Sync in it. Foreshadowing.)
 
 ## What went wrong: the disk that filled itself
 

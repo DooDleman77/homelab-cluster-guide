@@ -1,6 +1,6 @@
 #!/bin/sh
 # Shared-drive permissions with ACLs, run on the Proxmox host (chapter 7, round 4).
-# READ CHAPTER 7 FIRST. Measure YOUR numbers; these are the one box's.
+# READ CHAPTER 7 FIRST. Measure YOUR numbers; these are CommandCenter's.
 #   Measure: pct exec <ID> -- su -s /bin/sh <service-user> -c "touch /media/uid-test"
 #            ls -ln /mnt/media/uid-test     (then delete the test file)
 JELLYFIN_UID=100107   # Jellyfin's user (107 inside its container)

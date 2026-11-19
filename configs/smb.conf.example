@@ -6,5 +6,5 @@
    read only = no
    guest ok = no
    valid users = root
-   # Not applied or tested on the one box (chapter 7, bug 3):
+   # Not applied or tested on CommandCenter (chapter 7, bug 3):
    # inherit acls = yes

@@ -15,7 +15,7 @@ It holds personal files, so I wrote a checklist **before** building and held the
 5. Backups that actually cover the data.
 6. Kept updated more carefully than the media apps.
 
-(Spoiler: number 5 didn't make it on the one box. See the end.)
+(Spoiler: number 5 didn't make it on CommandCenter. See the end.)
 
 ## Before you start
 
@@ -155,7 +155,7 @@ Tailscale must be **connected on the phone** (the name isn't a public domain). I
 
 ## What's still open
 
-- **The data lives on the backup drive, and nothing backs it up.** Proxmox's backup job never includes bind-mounted folders ([chapter 9](09-immich-and-the-backup-gap.md)). If that drive dies, the files are gone. Fixes: restic to the *other* drive (chapter 9), or AIO's built-in backup pointed at the other drive. **Neither was done on the one box.** Checklist item 5: ❌.
+- **The data lives on the backup drive, and nothing backs it up.** Proxmox's backup job never includes bind-mounted folders ([chapter 9](09-immich-and-the-backup-gap.md)). If that drive dies, the files are gone. Fixes: restic to the *other* drive (chapter 9), or AIO's built-in backup pointed at the other drive. **Neither was done on CommandCenter.** Checklist item 5: ❌.
 - **Sharing a calendar with someone else in the house:** planned (second user, invited to the tailnet, calendar shared by username). Not done.
 
 ## Roads not taken

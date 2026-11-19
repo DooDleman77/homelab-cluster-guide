@@ -2,7 +2,7 @@
 # Back up the photo folder (a bind mount the nightly vzdump job SKIPS)
 # to the OTHER drive with restic (chapter 9, step 4).
 #
-# HONEST STATUS: written up for Book 1, NEVER applied or tested on the one box.
+# HONEST STATUS: written up for Book 1, NEVER applied or tested on CommandCenter.
 # Standard restic usage; test a restore before you trust it.
 #
 # One-time setup on the Proxmox host:

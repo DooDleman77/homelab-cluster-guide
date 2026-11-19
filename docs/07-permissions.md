@@ -151,7 +151,7 @@ An ACL has a **mask**, a ceiling on every named entry. Samba created the folder 
 setfacl -m mask::rwx "/mnt/media/movies/<folder-made-over-SMB>"
 ```
 
-> ⚠️ **This one can come back.** I fixed the folders, not Samba. The likely permanent fix is `inherit acls = yes` in the `[media]` share. **We didn't apply or test that on the one box.** Until you do, spot-check new folders with `getfacl <folder> | grep effective`.
+> ⚠️ **This one can come back.** I fixed the folders, not Samba. The likely permanent fix is `inherit acls = yes` in the `[media]` share. **We didn't apply or test that on CommandCenter.** Until you do, spot-check new folders with `getfacl <folder> | grep effective`.
 
 **Bug 4: one broken metadata source jammed the queue.** One online metadata provider returned malformed data for at least one episode (`'i' is invalid after a value`). Jellyfin retried it every refresh, and me impatiently re-clicking "Refresh metadata" before a run ever finished made it look stuck for weeks. **Fix:** turn that provider off for episodes (Dashboard → Libraries → Shows → Manage), then start **one** refresh and leave it alone.
 

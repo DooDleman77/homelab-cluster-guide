@@ -2,7 +2,7 @@
 
 [← 10. Home Assistant](10-home-assistant.md) · [Guide](../README.md) · [What's still open →](whats-still-open.md)
 
-## Where the one box ended up
+## Where CommandCenter ended up
 
 By the end of chapter 10, one 2012-era PC with 16 GB of RAM is running the house's DNS, a streaming service, media automation, a private cloud, a photo library, a photo frame and the smart home. It cost $0.
 
@@ -19,7 +19,7 @@ It is also:
 
 ## Side quests from the Book 1 era
 
-These happened around the one box but weren't built *on* it, so they're not step-by-step here. Book 1 has the full versions.
+These happened around CommandCenter but weren't built *on* it, so they're not step-by-step here. Book 1 has the full versions.
 
 - **A router behind the router.** The provider's gateway has no admin page, so a free old DSL router went in behind it ("double NAT, on purpose"). It came online and a laptop browsed through it end to end. The server itself was never moved behind it. Along the way I borrowed the server's own network cable to test it and took the whole house's DNS down. Use a spare cable.
 - **A touchscreen control panel.** A cheap "Cheap Yellow Display" (an ESP32 board with a 3.5" touchscreen) running ESPHome: weather, cameras, and tomorrow's calendar, fed by Home Assistant. Murderbot reasoned its way to the wrong answer about the screen's colors, and I only caught it by asking "wait, why would going *back* make it appear?"
@@ -29,7 +29,7 @@ These happened around the one box but weren't built *on* it, so they're not step
 
 ## Coming in Part 2: the cluster
 
-The one box had to go. Part 2 is what replaced it, built the same way: out of other people's junk, every command real, every mistake kept.
+CommandCenter had to go. Part 2 is what replaced it, built the same way: out of other people's junk, every command real, every mistake kept.
 
 - **Five more computers** from e-waste piles and "you want this old thing?" offers: refurb office towers and tiny business PCs. Named after a certain 90s cartoon's planet-saving team. With their powers combined…
 - **An old laptop that became the backup server**, whose battery doubles as a tiny UPS. Backups that live *outside* the thing they back up, finally.

@@ -96,7 +96,7 @@ Admin account, home location, units, time zone. One real advantage of a VM: its 
 ## Three scares, all false alarms
 
 - **"The VM is gone!"** Proxmox's mobile app showed an empty list. Desktop page: running. A mobile display quirk.
-- **Memory at 93.8%.** Maybe real, maybe a memory bug fixed in a later point release. **Never re-checked on the one box.** Watch Home Assistant's own Settings → System → Hardware graph over days, not one snapshot.
+- **Memory at 93.8%.** Maybe real, maybe a memory bug fixed in a later point release. **Never re-checked on CommandCenter.** Watch Home Assistant's own Settings → System → Hardware graph over days, not one snapshot.
 - **Safari won't load it.** Autocomplete dropped the `:8123`. Type the full `http://<haos-IP>:8123`.
 
 ## Adding a Zigbee radio
@@ -152,7 +152,7 @@ ZHA found it: radio **EZSP**, 115200 baud, flow control **Hardware**.
 
 Brand-new stick: **Create a network.** ZHA backs the network up itself (download it from the ZHA menu; that's what you'd restore onto a replacement stick).
 
-**Honest status:** the coordinator is online. **No devices were paired on the one box.** That's where Book 1 stops.
+**Honest status:** the coordinator is online. **No devices were paired on CommandCenter.** That's where Book 1 stops.
 
 > 🤖 **Murderbot:** So you bought a radio for a house with no Zigbee devices.
 > **Me:** It's a radio *for the future*.
@@ -170,4 +170,4 @@ Home Assistant discovered an "OpenWRT router". I don't own one. It came in over 
 
 ## Skip ahead?
 
-Standalone. This is where the one box tops out. [What comes next →](coming-in-part-2.md)
+Standalone. This is where CommandCenter tops out. [What comes next →](coming-in-part-2.md)

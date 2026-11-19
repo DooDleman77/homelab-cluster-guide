@@ -182,7 +182,7 @@ Prowlarr → Indexer Proxies → edit the proxy → Host `http://<byparr-IP>:819
 
 ## Planned, not built: audiobooks
 
-Researched, not built on the one box. Readarr (the "Sonarr for books") was retired in 2025; successors exist. The plan was **Audiobookshelf** as the player (no built-in remote access, so Tailscale), a phone app that talks to it, and legal sources only: DRM-free stores, your library's lending app, public-domain recordings. No DRM stripping, ever.
+Researched, not built on CommandCenter. Readarr (the "Sonarr for books") was retired in 2025; successors exist. The plan was **Audiobookshelf** as the player (no built-in remote access, so Tailscale), a phone app that talks to it, and legal sources only: DRM-free stores, your library's lending app, public-domain recordings. No DRM stripping, ever.
 
 ## Roads not taken
 

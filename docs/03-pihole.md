@@ -126,7 +126,7 @@ It ran noticeably smoother right away. (You can also raise the rate limit in Set
 | **Pi-hole** *(chosen)* | Huge community, great Query Log (which solved part 2) | Encrypted DNS to clients needs add-ons |
 | AdGuard Home | Encrypted DNS and per-device rules built in | Smaller community |
 | Technitium DNS | A full DNS server that also blocks | More to learn |
-| Unbound (add-on) | Pi-hole asks the root servers itself; no DNS company sees your lookups | One more service. **The first upgrade I'd add; not done on the one box** |
+| Unbound (add-on) | Pi-hole asks the root servers itself; no DNS company sees your lookups | One more service. **The first upgrade I'd add; not done on CommandCenter** |
 | NextDNS / Control D | Works on phones anywhere, no server | A company sees your lookups; free tiers cap usage |
 | Browser extensions | Block ads DNS can't touch | Per device; nothing for TVs |
 | A Raspberry Pi | DNS keeps working while the big server is down | One more box |

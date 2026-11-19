@@ -11,7 +11,7 @@ Checked: 2026-11-18, every file in this repo.
 | Real home subnet and every real address | `<placeholders>`, `192.168.1.0/24` examples, `100.x.y.z` for Tailscale |
 | MAC addresses | none. The guide says "find your MAC" and shows `aa:bb:cc:dd:ee:ff` only as a format example |
 | Drive serials, service tags, exact model numbers of the server's own parts | removed ("a 2012-era quad-core Intel desktop chip") |
-| The server's hostname, Tailscale machine names, tailnet name | removed. "The box"; `<container-name>.<your-tailnet>.ts.net` |
+| The server's hostname, Tailscale machine names, tailnet name | hostname kept on purpose: **CommandCenter** (it stays until Part 2 retires it). Tailscale machine names and tailnet name removed; `<container-name>.<your-tailnet>.ts.net` |
 | Emails, real names | removed. The only name is the GitHub handle `DooDleman77`. Git commits use GitHub's noreply address |
 | Internet provider, family, home and work details | removed ("the provider's app", "the house") |
 | Private notes system (roles, file names, task IDs) | removed entirely |

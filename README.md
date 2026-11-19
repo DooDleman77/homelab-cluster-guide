@@ -16,9 +16,9 @@ This is the free guide version of *Spare Parts Server*, Book 1. Same story, same
 
 **Murderbot:** my AI co-pilot. It dug up commands, walked me through the landmines, stepped on a few of its own, and kept dragging me back to the plan every time I wandered off after something shiny. It would rather be watching its shows. It is not in the server: nothing on the box runs AI, and every command here was typed by a human. When Murderbot got something wrong, it stays in, in a box marked **🤖 Murderbot Check**. We argue. The arguments are in here too, kept short.
 
-## The box
+## The box: CommandCenter
 
-One ordinary tower PC from the early 2010s. Nothing special about it, and that's the point.
+One ordinary tower PC from the early 2010s, named **CommandCenter**. Nothing special about it, and that's the point. It keeps the name until Part 2 retires it.
 
 | Part | What it is | What it means for this guide |
 |---|---|---|

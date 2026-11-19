@@ -145,7 +145,7 @@ Now `ssh root@100.x.y.z` lands straight in the server's shell, from anywhere.
 - **Plain WireGuard (wg-easy):** no middleman, one forwarded port, every device a manual step.
 - **Cloudflare Tunnel:** great for public web apps on your own domain; its terms rule out heavy video, so not for Jellyfin.
 - **Port forward + reverse proxy:** how the public internet works. Worth learning eventually. Not where this guide starts.
-- **Subnet router** (`tailscale up --advertise-routes=192.168.1.0/24`): the whole home network reachable over the tailnet. Convenient, broad. Not done on the one box.
+- **Subnet router** (`tailscale up --advertise-routes=192.168.1.0/24`): the whole home network reachable over the tailnet. Convenient, broad. Not done on CommandCenter.
 
 ## Skip ahead?
 

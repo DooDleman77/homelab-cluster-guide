@@ -128,7 +128,7 @@ pct exec <container-ID> -- ip addr show eth0    # run one command inside the con
 | Static outside the DHCP pool | No clashes | Same weakness if the range changes |
 | Names instead of numbers (Pi-hole local DNS) | Remember names; change an address in one place | Needs Pi-hole first ([chapter 3](03-pihole.md)) |
 
-**The road I'd take next:** Pi-hole's **Local DNS Records** page. Bookmark `http://jellyfin.home.arpa:8096` instead of a number (`.home.arpa` is reserved for home networks), and an address change is one edit, not every bookmark in the house. (We didn't get to this on the one box.)
+**The road I'd take next:** Pi-hole's **Local DNS Records** page. Bookmark `http://jellyfin.home.arpa:8096` instead of a number (`.home.arpa` is reserved for home networks), and an address change is one edit, not every bookmark in the house. (We didn't get to this on CommandCenter.)
 
 ## Skip ahead?
 

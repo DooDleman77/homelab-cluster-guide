@@ -31,7 +31,7 @@ About 15 GB total, 10–11 GB available. Room for one more.
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/immich.sh)"
 ```
 
-**Advanced**, every prompt read: 4 cores / 6 GB RAM (the defaults; indexing is hungry), 20 GB disk grown to 32 GB after, my existing SSH key, **TUN/TAP: yes** (needed for Step 7; this time I caught it *before* the install), machine learning **CPU only** (this box's graphics can't help), host upgrade mid-install **declined**.
+**Advanced**, every prompt read: 4 cores / 6 GB RAM (the defaults; indexing is hungry), 20 GB disk grown to 32 GB after, my existing SSH key, **TUN/TAP: yes** (needed for Step 7; this time I caught it *before* the install), machine learning **CPU only** (CommandCenter's graphics can't help), host upgrade mid-install **declined**.
 
 ```bash
 pct resize <immich-ID> rootfs +12G     # you can grow a container disk any time, never shrink it
@@ -102,7 +102,7 @@ restic -r /mnt/backup/restic-immich --password-file /root/.restic-pass snapshots
 
 Keep a copy of that password file **off the server**; without it the backup can't be opened. Nightly schedule and a restore test: [`configs/restic-photos.sh.example`](../configs/restic-photos.sh.example).
 
-> ⚠️ **Honest status: we didn't test this on the one box.** The restic fix was written up while finishing Book 1 and never applied to this server before it was retired. It's the standard restic recipe, but it's untested *here*. Test a **restore** before you trust it: a backup you've never restored isn't a backup yet. (Part 2 takes another run at where the photos live.)
+> ⚠️ **Honest status: we didn't test this on CommandCenter.** The restic fix was written up while finishing Book 1 and never applied to this server before it was retired. It's the standard restic recipe, but it's untested *here*. Test a **restore** before you trust it: a backup you've never restored isn't a backup yet. (Part 2 takes another run at where the photos live.)
 
 ### Step 5: Point Immich at the new storage
 
@@ -180,7 +180,7 @@ docker logs immichframe --tail 50     # "Application started." (DataProtection w
 
 - **PhotoPrism, Ente, LibrePhotos, Nextcloud Memories, PiGallery2:** see Book 1 for the long version. Immich won on phone backup and sharing.
 - **Immich Kiosk** instead of ImmichFrame: very configurable.
-- **Backups:** a volume mount point instead of a bind mount (then vzdump really includes it); **Proxmox Backup Server** (deduplicated, incremental; Part 2 builds one on a laptop); off-site copies. The **3-2-1 rule** says three copies, two kinds of media, one off-site. On the one box, the photos had **one** copy.
+- **Backups:** a volume mount point instead of a bind mount (then vzdump really includes it); **Proxmox Backup Server** (deduplicated, incremental; Part 2 builds one on a laptop); off-site copies. The **3-2-1 rule** says three copies, two kinds of media, one off-site. On CommandCenter, the photos had **one** copy.
 
 ## Skip ahead?
 
